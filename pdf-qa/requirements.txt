@@ -1,0 +1,11 @@
+langchain==0.0.340
+llama_index==0.9.6
+pydantic==1.10.13
+python-dotenv==1.0.0
+Requests==2.31.0
+sentence-transformers==2.2.2
+transformers==4.35.2
+octoai-sdk==0.2.0
+chromadb
+pypdf2
+faiss-cpu
