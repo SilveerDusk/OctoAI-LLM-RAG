@@ -1,0 +1,9 @@
+beautifulsoup4
+langchain
+pysqlite3
+octoai-sdk
+transformers
+chromadb
+Requests
+playwright
+tiktoken

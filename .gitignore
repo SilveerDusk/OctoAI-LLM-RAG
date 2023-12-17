@@ -1,3 +1,5 @@
 .vscode/launch.json
 pdf-qa/.env
 octoml-demo
+web-retreiver/.env
+web-retreiver/__pycache__/
