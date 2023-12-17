@@ -1,0 +1,28 @@
+Resources:
+  AskLlamaAPI:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: Ask LLM API
+      StageName: Prod
+  AskLlamaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      PackageType: Image
+      ImageConfig:
+        Command:
+        - main.handler
+      Events:
+        AskLlama:
+          Type: Api
+          Properties:
+            RestApiId:
+              Ref: AskLlamaAPI
+            Path: /predict
+            Method: post
+      ImageUri: askllamafunction:v1
+    Metadata:
+      DockerContext: /Users/bassemyacoube/hackathon-2023-rag/web-retreiver
+      DockerTag: v1
+      Dockerfile: Dockerfile
+      SamResourceId: AskLlamaFunction

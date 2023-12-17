@@ -3,3 +3,5 @@ pdf-qa/.env
 octoml-demo
 web-retreiver/.env
 web-retreiver/__pycache__/
+web-retreiver/samconfig.toml
+web-retreiver/awscli-bundle/
