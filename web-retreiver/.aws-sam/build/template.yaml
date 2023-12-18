@@ -22,7 +22,7 @@ Resources:
             Method: post
       ImageUri: askllamafunction:v1
     Metadata:
-      DockerContext: /Users/bassemyacoube/hackathon-2023-rag/web-retreiver
+      DockerContext: /Users/jasonjelincic/Documents/GitHub/OctoAI-LLM-RAG/web-retreiver
       DockerTag: v1
       Dockerfile: Dockerfile
       SamResourceId: AskLlamaFunction

@@ -12,7 +12,7 @@ WORKDIR /var/task
 # Copy the requirements file into the container
 COPY requirements.txt ${LAMBDA_TASK_ROOT}
 
-RUN yum install -y gcc-c++ pkgconfig poppler-cpp-devel
+RUN yum install -y gcc-c++ pkgconfig poppler-cpp-devel sqlite-
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
